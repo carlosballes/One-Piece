@@ -1,9 +1,11 @@
 import { Db, MongoClient } from "mongodb";
-import { connectDB } from "../mongo.ts";
+import { connectDB } from "../mongo";
 
 const Query = {
 
-   
+    getUsers: async()=>{
+        return "hola";
+    },
     
 }  
 

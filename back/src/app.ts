@@ -1,9 +1,9 @@
 import { ApolloError, ApolloServer, gql } from "apollo-server";
 import {Db, MongoClient} from "mongodb";
-import { connectDB } from "./mongo.ts";
-import { typeDefs } from "./schema.ts";
-import {Query} from "./resolvers/Query.ts"
-import {Mutation} from "./resolvers/Mutation.ts"
+import { connectDB } from "./mongo";
+import { typeDefs } from "./schema";
+import {Query} from "./resolvers/Query"
+import {Mutation} from "./resolvers/Mutation"
 
 
 const resolvers ={
