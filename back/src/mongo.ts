@@ -12,7 +12,6 @@ export const connectDB = async (): Promise<Db> => {
   try {
     await client.connect();
     console.info("MongoDB connected");
-    //console.log(client.db(dbName))
     return client.db(dbName);
   } catch (e) {
     throw e;
