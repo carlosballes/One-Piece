@@ -2,7 +2,8 @@ export interface User{
     id: String
     email: String
     name: String
-    pwd: String
+    surname: String
+    password: String
     code: String
-    status:boolean
+    status:String
 }

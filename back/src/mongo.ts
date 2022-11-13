@@ -3,7 +3,7 @@ import { Db, MongoClient } from "mongodb";
 export const connectDB = async (): Promise<Db> => {
   const usr = "Carlos";
   const pwd = "pipo";
-  const dbName: string = "Carlos";
+  const dbName: string = "TFG";
   const mongouri: string =
     `mongodb+srv://${usr}:${pwd}@cluster0.ueeyw.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 

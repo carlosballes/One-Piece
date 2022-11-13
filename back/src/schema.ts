@@ -1,10 +1,14 @@
 import { gql } from "apollo-server";
 
 export const typeDefs = gql `
+
 type Query{  
-    getUsers:String!
+    LogIn(email:String!,password:String!):Int!
+    DeleteAll:Int!
 }
 type Mutation{
-    SignIn:String!
+    Registrar(email:String!,name:String!,surname:String!,password:String!):Int!
+    AbleAccount(id:String!,code:String!):Int!
+    ForgotPassword(email:String!):Int!
 }
 `
