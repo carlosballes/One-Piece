@@ -41,6 +41,24 @@ const Query = {
             }
         }
     },
+
+    GetId: async (parent: any, User:User) =>{
+        try {
+            const client = await connectDB();
+            const db: Db = client;
+            const users = await db.collection<User>("Users")
+            
+            const existe=await users.findOne({email:User.email})
+            if (!existe){
+                return "1"
+            }else{
+                return (existe.id).toString()
+            }
+            
+        } catch (e) {
+            return e
+        }
+    },
 }  
 
 

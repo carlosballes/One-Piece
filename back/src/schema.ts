@@ -5,6 +5,7 @@ export const typeDefs = gql `
 type Query{  
     LogIn(email:String!,password:String!):Int!
     DeleteAll:Int!
+    GetId(email:String!):String!
 }
 type Mutation{
     Registrar(email:String!,name:String!,surname:String!,password:String!):Int!
