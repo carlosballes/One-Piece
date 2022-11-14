@@ -1,0 +1,147 @@
+#PantallaLogin{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(218, 223, 213);
+}
+
+#PedirDatos_PantallaLogin{
+    height: 55vh;
+    width: 30vw;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: white;
+    border-radius: 2vh;
+
+}
+
+#ParteArriba_PantallaLogin{
+    height: 10vh;
+    width: 30vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 3vh;
+
+}
+
+#BotonAtras_PantallaLogin{
+    height: 3.5vh;
+    width: 2vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.1vh solid black;
+    border-radius: 2vh;
+    
+    font-size: 1.5vw;
+    
+}
+
+#BotonAtras_PantallaLogin:hover{
+    height: 4vh;
+    font-size: 2vw;
+    cursor: pointer;
+    border-radius: 0.2vh solid black;
+}
+
+#TextoInicioSesion_PantallaLogin{
+    height: 10vh;
+    width: 15vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2vw;
+    border-bottom: 0.1vh solid grey;
+    margin-right: 5.5vw;
+}
+
+#ParteDatos_PantallaLogin{
+    height: 30vh;
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-top: -1vh;
+}
+
+#Inputs_PantallaLogin{
+    height: 20vh;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#Inputs_PantallaLogin input{
+    height: 3vh;
+    width: 12vw;
+
+    border: 0.2vh solid black;
+}
+
+#BotonInicio_PantallaLogin {
+    height: 5vh;
+    width: 9vw;
+}
+
+#BotonInicio_PantallaLogin button{
+    height: 5vh;
+    width: 9vw;
+
+    background-color: rgb(217, 234, 248); 
+    color: black; 
+    border: 0.3vh solid black;
+    
+}
+
+#BotonInicio_PantallaLogin p{
+    font-size: 0.75vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#BotonInicio_PantallaLogin button:hover{
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    
+}
+
+#ParteBaja_PantallaLogin{
+    height: 10vh;
+    width: 30vw;
+
+    font-size: 0.75vw;
+    color: rgb(65, 65, 65);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: -3vh;
+   
+}
+

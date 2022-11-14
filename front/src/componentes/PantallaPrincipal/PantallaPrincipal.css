@@ -50,25 +50,26 @@
 
 #NombreTrabajo_PantallaPrincipal{
     height: 9vh;
-    width: 15vw;
+    width: 20vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 5vh;
+    font-size: 2.5vw;
     font-family: 'Times New Roman', Times, serif;
 }
 
 #IniciarSesion_PantallaPrincipal{
     height: 9vh;
-    width: 10vw;
+    width: 12vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    font-size: 1.75vh;
+    font-size: 1vw;
+    margin-right: 1vw;
 }
 
 #IniciarSesion_PantallaPrincipal p:hover{
@@ -106,6 +107,7 @@
     flex-direction: row;
     
     margin-top: 5vh;
+    font-size: 1.25vw;
 }
 
 #Texto1_PantallaPrincipal{
@@ -121,7 +123,7 @@
 }
 
 #Texto1_PantallaPrincipal p{
-    margin-left: 7vh;
+    margin-left: 2vh;
 }
 
 #Texto2_PantallaPrincipal{
@@ -137,5 +139,5 @@
 }
 
 #Texto2_PantallaPrincipal p{
-    margin-left: 7vh;
+    margin-left: 2vh;
 }
