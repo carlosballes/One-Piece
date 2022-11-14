@@ -63,6 +63,7 @@ const PantallaLogin: FC<{}> =()=>{
                 <div id="ParteBaja_PantallaLogin">
                     <div id="Registrar_PantallaLogin">
                         <p>¿Aún no estás registrado? Pulse <Link to="/register">aquí</Link> para registrarte</p>
+                        <p>¿Has olvidado tu contraseña? Pulse <Link to="/forgotPassword">aquí</Link></p>
                     </div>
                 </div>
             </div>
