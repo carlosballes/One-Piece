@@ -21,6 +21,7 @@
     background-color: white;
     border-radius: 2vh;
 
+
 }
 
 #ParteArriba_PantallaLogin{
@@ -124,6 +125,7 @@
 #Input2_PantallaLogin{
     height: 10vh;
     width: 20vw;
+    margin-right: 0.5vw;
 
     display: flex;
     flex-direction: row;

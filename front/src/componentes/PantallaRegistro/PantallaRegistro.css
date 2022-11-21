@@ -9,6 +9,19 @@
     background-color: rgb(218, 223, 213);
 }
 
+#TextoRegistro_PantallaRegistro{
+    height: 10vh;
+    width: 15vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2vw;
+    border-bottom: 0.1vh solid grey;
+    margin-right: 5.5vw;
+}
+
 #PedirDatos_PantallaRegistro{
     height: 55vh;
     width: 30vw;
@@ -34,6 +47,7 @@
 
     margin-top: 3vh;
     margin-right: 2vw;
+    margin-bottom: 3vh;
 
 }
 
@@ -57,4 +71,188 @@
     font-size: 2vw;
     cursor: pointer;
     border-radius: 0.2vh solid black;
+}
+
+#Inputs_PantallaRegistro{
+    height: 20vh;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#Inputs_PantallaRegistro input{
+    height: 3vh;
+    width: 13vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    border: 0.2vh solid black;
+
+}
+
+#Input1_PantallaRegistro{
+    height: 10vh;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2vw;
+
+}
+
+#Input2_PantallaRegistro{
+    height: 10vh;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2vw;
+
+}
+
+#Input3_PantallaRegistro{
+    height: 10vh;
+    width: 20vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2vw;
+
+}
+
+#Input4_PantallaRegistro{
+    height: 10vh;
+    width: 20vw;
+    margin-right: 0.5vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Input4_PantallaRegistro button{
+    height: 3.5vh;
+    width: 1.5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#Input4_PantallaRegistro button:hover{
+    cursor: pointer;
+}
+
+
+#Input4_PantallaRegistro img{
+    height: 3.5vh;
+    width: 1.5vw;
+    border: 0.1vh solid black;
+}
+
+#Input5_PantallaRegistro{
+    height: 10vh;
+    width: 20vw;
+    margin-right: 0.5vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Input5_PantallaRegistro button{
+    height: 3.5vh;
+    width: 1.5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+#Input5_PantallaRegistro button:hover{
+    cursor: pointer;
+}
+
+
+#Input5_PantallaRegistro img{
+    height: 3.5vh;
+    width: 1.5vw;
+    border: 0.1vh solid black;
+}
+
+
+#BotonInicio_PantallaRegistro {
+    height: 5vh;
+    width: 9vw;
+    margin-top: 2vh;
+    margin-right: 1vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+   
+}
+
+#BotonInicio_PantallaRegistro button{
+    height: 5vh;
+    width: 9vw;
+
+    background-color: rgb(217, 234, 248); 
+    color: black; 
+    border: 0.3vh solid black;
+    
+}
+
+
+#BotonInicio_PantallaRegistro p{
+    font-size: 0.75vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#BotonInicio_PantallaRegistro button:hover{
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    
+}
+
+#ErroresRegistro_PantallaRegistro{
+    height: 2vh;
+    width: 20vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-bottom: 2vh;
+    font-size: 0.7vw;
+    margin-right: 2vw;
+    color: red;
 }

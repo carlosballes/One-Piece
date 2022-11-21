@@ -45,12 +45,8 @@ const PantallaLogin: FC<{}> =()=>{
             if(GetID.data.GetId!="1"){
                 navigate(`/home/${GetID.data.GetId}`)
             }   
-        }else if(datosQuery.data.LogIn == 1){
-            setError(1)
-        }else if(datosQuery.data.LogIn == 2){
-            setError(2)
         }else{
-            setError(3)
+            setError(datosQuery.data.LogIn)
         }
     }
 
@@ -78,7 +74,7 @@ const PantallaLogin: FC<{}> =()=>{
                         </div>
                     </div>
                     <div id="BotonInicio_PantallaLogin">
-                        <button onClick={()=>{const queryLogin=LogInQuery({variables:{email:Email,password:Password}}); ejecutarQueryLogIn(queryLogin); setTimeout(()=>{setError(0)},5000)}}><p><b>INICIA SESIÓN</b></p></button>
+                        <button onClick={()=>{const queryLogin=LogInQuery({variables:{email:Email,password:Password}}); ejecutarQueryLogIn(queryLogin); setTimeout(()=>{setError(0)},3000)}}><p><b>INICIA SESIÓN</b></p></button>
                     </div>
                 </div>
                 {error!=0 && <div id="ParteErrores">

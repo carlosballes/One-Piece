@@ -25,20 +25,30 @@ export const Mutation = {
             const existe = await users.findOne({ email: User.email })
 
             if (existe) {
-                console.log("Ya existe un usuario con este correo")
+
                 return 1    
             } else {
                 const id = uuidv4()
                 const code = aleatorio(6)
                 await users.insertOne({ id: id, email: User.email, name: User.name, surname: User.surname, password: User.password, code: code, status: "Disable" })
+
+                if(User.password=="" || User.email=="" || User.name=="" || User.surname==""){
+                    return 2
+                }
+                if(!User.email.includes("@")){
+                    return 3              
+                }
+
+                let urlCheckCode=`http://localhost:3000/checkcode/${id}`
                 transporter.sendMail(
                     {
                         from: "cuentaparacosas20189@gmail.com",
                         to: User.email,
                         subject: "REGISTRO ONE D. SPORT",
-                        html: `<br>Te has registrado en la aplicacion con el nombre <b>${User.name}</b></br> <br>Tu código de verificacion es: <b>${code}</b></br>`
+                        html: `<br>Te has registrado en la aplicacion con el nombre <b>${User.name}</b></br> <br>Tu código de verificacion es: <b>${code}</b></br> <br><a href=${urlCheckCode}/>Pulse aquí para habilitar la cuenta</a></br>`
                     }
                 )
+
                 return 0
             }
         } catch (e) {
