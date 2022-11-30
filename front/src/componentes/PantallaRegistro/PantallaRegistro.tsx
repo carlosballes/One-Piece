@@ -104,7 +104,7 @@ const PantallaRegistro: FC<{}> =()=>{
                 </div>}
 
                 <div id="BotonInicio_PantallaRegistro">
-                    <button onClick={()=>{ejecutarMutation()}}><p><b>REGISTRARSE UWU</b></p></button>
+                    <button onClick={()=>{ejecutarMutation()}}><p><b>REGISTRARSE</b></p></button>
                 </div>
             </div>
             

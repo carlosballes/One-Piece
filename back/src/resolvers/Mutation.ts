@@ -91,8 +91,10 @@ export const Mutation = {
 
         const existe = await users.findOne({ email: User.email })
         const contraseñaNueva = aleatorio(10)
+        if(User.email ==""){
+            return 2             
+        }
         if(!existe){
-            console.log("No existe este email")
             return 1
         }else{
             await users.updateOne({email:User.email},{$set:{password:contraseñaNueva}})
